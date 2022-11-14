@@ -22,11 +22,10 @@ async function load() {
   let button = document.getElementById("test");
   button.addEventListener("click", () => {
     randomShuffle();
-    // randomNamePicker();
-    // while (studentNames.length == 0) {
-    //   createStudentList();
-    //   selectedStudents.splice(0, selectedStudents.length);
-    // }
+    while (studentNames.length == 0) {
+      createStudentList();
+      selectedStudents.splice(0, selectedStudents.length);
+    }
   });
   //empty arrays for storing names__________________________________
   let studentNames = [];
@@ -50,9 +49,9 @@ async function load() {
     let sleepTime = 80;
     let times = 15;
     for (let i = 0; i < times; i++) {
-      let result = Math.floor(Math.random() * studentNames.length);
+      let randName = Math.floor(Math.random() * studentNames.length);
       let div = document.getElementById("result");
-      div.innerHTML = studentNames[result];
+      div.innerHTML = studentNames[randName];
       sleepTime = sleepTime * 1.1;
       await sleep(sleepTime);
     }
