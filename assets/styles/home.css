@@ -1,0 +1,112 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  color: white;
+}
+
+* body {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.page-container {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.page-container .student-container {
+  width: 280px;
+  min-width: 280px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #475569;
+}
+.page-container .student-container .title {
+  background-color: #1e293b;
+  text-align: center;
+  padding: 1rem;
+  width: 90%;
+  border-bottom-right-radius: 22px;
+  border-bottom-color: 2px solid white;
+}
+.page-container .student-container .title h3 {
+  margin: 5px 0 10px 0;
+  padding: 0;
+}
+.page-container .student-container .students {
+  background-color: #1e293b;
+  border-radius: 8px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 200px;
+  height: 80vh;
+  overflow-y: scroll;
+}
+.page-container .student-container .students div {
+  max-width: 70%;
+  margin: 0.8rem auto 0.8rem auto;
+  padding: 0.1rem 0.4rem;
+  width: 80%;
+  border-radius: 8px;
+  background-color: #475569;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-container .student-container .students div p {
+  margin: 0.4rem 0;
+}
+.page-container .student-container .students div div {
+  margin: 0.3rem 0;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+}
+.page-container .random-generator-container {
+  background-color: #111827;
+  border-left: 1px solid white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-container .random-generator-container .content-container {
+  padding: 3rem;
+  background-color: #1e293b;
+  border-radius: 20px;
+}
+.page-container .random-generator-container .content-container .top .name {
+  text-align: center;
+}
+.page-container .random-generator-container .content-container .top .name h1 {
+  font-size: 38px;
+}
+.page-container .random-generator-container .content-container .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.page-container .random-generator-container .content-container .bottom button {
+  padding: 1rem 4rem;
+  border-radius: 12px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #0284c7;
+  color: white;
+}
+.page-container .random-generator-container .content-container .bottom button:hover {
+  cursor: pointer;
+}
+.page-container .random-generator-container .content-container .bottom button:active {
+  background-color: #015d8b;
+}/*# sourceMappingURL=home.css.map */

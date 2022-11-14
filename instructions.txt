@@ -1,0 +1,38 @@
+/* DUE: Monday, 11/14
+HTML / CSS Or SCSS / JS Capstone
+
+Build My Random Student Generator
+HTML Interface
+ - Layout: Sidebar with users that are fetched from the given api.
+   - users, (formatted first and last name, weight Defaulted to 1, plus and minus weight buttons, which should labeled appropriately)
+ - larger middle section that has:
+   - label (initial message, selected user)
+   - button to initiate selection process
+ - shuffle animation
+ - hover effects
+ - disabled button while selecting a user
+
+JS
+ - fetch users from given api
+ - creating dom elements and appending them to the dom
+ - each user should be weighted, meaning that they would be more or less likely to be randomly selected
+ - users should only be selected 1 time (unless weighted) per round (getting through entire list)
+ - once everyone has been selected, the list should start over
+ - after starting another (meaning everyone has selected), the first person selected cannot be the lasat person selected
+
+Use VS Code
+Push to github
+Clean projects
+Clean Code
+Try your best to incorporate a large majority of what you've learned
+
+
+Endpoint: https://devpipeline-mock-api.herokuapp.com/api/auth/login
+Request Payload: { email, password } as JSON, credentials: "include"
+Response body: {
+message: "Logged In",
+user: {_id: "", first_name: "", last_name: "", cohort.......},
+users: [{}, {}, {}]
+}
+-- HAVE FUN --
+*/
